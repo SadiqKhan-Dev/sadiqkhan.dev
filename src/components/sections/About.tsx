@@ -65,7 +65,7 @@ export function About() {
                   Leading AI engineering
                 </div>
                 <div className="text-sm text-zinc-400 mt-1">
-                  Q2 2026 — open for 2–3 new projects
+                  Q4 2026 — open for 2–3 new projects
                 </div>
               </div>
 

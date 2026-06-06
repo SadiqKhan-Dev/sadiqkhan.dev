@@ -70,7 +70,7 @@ export function Contact() {
             <div className="font-mono text-[11px] uppercase tracking-wider text-zinc-500 mb-1">
               Window
             </div>
-            <div className="text-zinc-100 font-medium">Q2 2026 onward</div>
+            <div className="text-zinc-100 font-medium">Q4 2026 onward</div>
           </div>
         </div>
 

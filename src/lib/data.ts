@@ -446,7 +446,7 @@ export const teamMembers: TeamMember[] = [
     shortRole: "Founder · AI",
     bio: "Full-stack engineer shipping AI-native products end-to-end. 5+ years turning ambiguous ideas into production systems.",
     longBio:
-      "Sadiq started coding at 15 to build a Discord bot. That instinct — figure it out, ship it, iterate — has shaped everything since. He leads AI engineering and architecture decisions across all client engagements, with a focus on systems that scale past demos and produce measurable results.",
+      "Sadiq started coding at 25 to build a Discord bot. That instinct — figure it out, ship it, iterate — has shaped everything since. He leads AI engineering and architecture decisions across all client engagements, with a focus on systems that scale past demos and produce measurable results.",
     image: "/team/sadiq.jpg",
     skills: [
       "Next.js",
@@ -462,7 +462,7 @@ export const teamMembers: TeamMember[] = [
       email: "mailto:hello@sadiqkhan.dev",
     },
     highlights: [
-      { label: "Experience", value: "5+ years" },
+      { label: "Experience", value: "2+ years" },
       { label: "Focus", value: "AI · Web" },
       { label: "Status", value: "Available" },
     ],
