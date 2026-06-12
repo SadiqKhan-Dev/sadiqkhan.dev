@@ -14,7 +14,7 @@ export default function TeamPage() {
 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
-      <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 border-b border-zinc-800/60 overflow-hidden">
+      <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 border-b border-zinc-800/60 overflow-hidden animate-fade-in">
         <div className="absolute inset-0 grid-bg pointer-events-none" />
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-emerald-400/40 to-transparent" />
 
@@ -56,10 +56,11 @@ export default function TeamPage() {
               { k: "3", v: "engineers" },
               { k: "12+", v: "years combined" },
               { k: "1", v: "shared standard" },
-            ].map((s) => (
+            ].map((s, i) => (
               <div
                 key={s.v}
-                className="flex items-baseline gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-4 py-2"
+                className="flex items-baseline gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-4 py-2 animate-slide-up"
+                style={{ animationDelay: `${0.2 + i * 0.1}s` }}
               >
                 <span className="font-mono text-sm font-semibold text-emerald-300">
                   {s.k}
@@ -82,7 +83,7 @@ export default function TeamPage() {
               Founder
             </div>
 
-            <article className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center rounded-3xl border border-emerald-400/20 bg-gradient-to-br from-emerald-400/[0.04] via-zinc-900/40 to-zinc-950 p-8 sm:p-12">
+            <article className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center rounded-3xl border border-emerald-400/20 bg-gradient-to-br from-emerald-400/[0.04] via-zinc-900/40 to-zinc-950 p-8 sm:p-12 animate-fade-in hover:border-emerald-400/40 hover:shadow-[0_0_35px_-10px_rgba(52,211,153,0.1)] transition-all duration-300">
               <div className="lg:col-span-5">
                 <div className="relative aspect-square w-full max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-zinc-900 ring-1 ring-emerald-400/30 glow">
                   <Image
@@ -121,11 +122,11 @@ export default function TeamPage() {
 
                 <div className="mt-8 grid grid-cols-3 gap-px bg-zinc-800/60 rounded-2xl overflow-hidden border border-zinc-800/60">
                   {featured.highlights.map((h) => (
-                    <div key={h.label} className="bg-zinc-950 px-4 py-4">
-                      <div className="font-mono text-[10px] uppercase tracking-wider text-zinc-500 mb-1">
+                    <div key={h.label} className="bg-zinc-950 px-4 py-4 group transition-all duration-300 hover:bg-accent/[0.02]">
+                      <div className="font-mono text-[10px] uppercase tracking-wider text-zinc-500 mb-1 group-hover:text-accent/70 transition-colors duration-300">
                         {h.label}
                       </div>
-                      <div className="text-zinc-100 font-medium text-sm">
+                      <div className="text-zinc-100 font-medium text-sm group-hover:text-accent transition-colors duration-300">
                         {h.value}
                       </div>
                     </div>
@@ -150,10 +151,11 @@ export default function TeamPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {rest.map((member) => (
+            {rest.map((member, i) => (
               <article
                 key={member.id}
-                className="group rounded-3xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8 hover:border-zinc-700 hover:bg-zinc-900/50 transition-all"
+                className="group rounded-3xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8 hover:border-zinc-600 hover:bg-zinc-900/50 hover:shadow-[0_0_30px_-10px_rgba(255,255,255,0.05)] hover:scale-[1.02] transition-all duration-300 animate-fade-in"
+                style={{ animationDelay: `${0.1 + i * 0.1}s` }}
               >
                 <div className="flex flex-col sm:flex-row items-start gap-6">
                   <div className="relative aspect-square w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden bg-zinc-800 ring-1 ring-zinc-700/50 shrink-0">

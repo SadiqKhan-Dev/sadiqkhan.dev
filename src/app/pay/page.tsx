@@ -81,14 +81,15 @@ export default function PayPage() {
       <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid lg:grid-cols-3 gap-6">
-            {pricingPackages.map((pkg) => (
+            {pricingPackages.map((pkg, i) => (
               <div
                 key={pkg.id}
-                className={`relative rounded-2xl border p-8 flex flex-col ${
+                className={`relative rounded-2xl border p-8 flex flex-col animate-fade-in hover:scale-[1.02] transition-all duration-300 ${
                   pkg.popular
-                    ? "border-emerald-400/40 bg-gradient-to-b from-emerald-400/[0.06] to-zinc-950"
-                    : "border-zinc-800 bg-zinc-900/30"
+                    ? "border-emerald-400/40 bg-gradient-to-b from-emerald-400/[0.06] to-zinc-950 hover:border-emerald-400/60 hover:shadow-[0_0_35px_-10px_rgba(52,211,153,0.15)]"
+                    : "border-zinc-800 bg-zinc-900/30 hover:border-zinc-600 hover:shadow-[0_0_30px_-10px_rgba(255,255,255,0.05)]"
                 }`}
+                style={{ animationDelay: `${0.1 + i * 0.1}s` }}
               >
                 {pkg.popular ? (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { CustomCursor } from "@/components/CustomCursor";
+import { ReadingProgress } from "@/components/ReadingProgress";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,8 +47,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body className="min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-emerald-400/20 selection:text-emerald-200">
-        {children}
+      <body className="min-h-screen bg-background text-foreground font-sans selection:bg-accent/20 selection:text-accent animate-fade-in" suppressHydrationWarning>
+        <ThemeProvider>
+          <ReadingProgress />
+          {children}
+          <CustomCursor />
+        </ThemeProvider>
       </body>
     </html>
   );
