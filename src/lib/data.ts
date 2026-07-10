@@ -170,18 +170,22 @@ export const stackGroups = [
   {
     title: "Mobile",
     skills: [
-      {
-        name: "React Native / Expo",
+      // {
+      //   name: "React Native / Expo",
+      //   desc: "Ship iOS and Android from one codebase, OTA updates, EAS Build. My mobile default.",
+      // },
+       {
+        name: "React Native",
         desc: "Ship iOS and Android from one codebase, OTA updates, EAS Build. My mobile default.",
       },
-      {
-        name: "Flutter",
-        desc: "Reach for it when the client wants pixel-identical rendering or heavier native integration.",
-      },
-      {
-        name: "Swift / Kotlin",
-        desc: "Dip in when a native module is unavoidable or when a few percent of perf actually matters.",
-      },
+      // {
+      //   name: "Flutter",
+      //   desc: "Reach for it when the client wants pixel-identical rendering or heavier native integration.",
+      // },
+      // {
+      //   name: "Swift / Kotlin",
+      //   desc: "Dip in when a native module is unavoidable or when a few percent of perf actually matters.",
+      // },
     ],
   },
   {
@@ -199,10 +203,10 @@ export const stackGroups = [
         name: "AI Agents",
         desc: "LangGraph and custom orchestrators. Multi-step reasoning, tool use, memory, human-in-the-loop patterns.",
       },
-      {
-        name: "Evals & Observability",
-        desc: "LangSmith, custom eval harnesses, prompt versioning. If you can't measure it, you can't ship it.",
-      },
+      // {
+      //   name: "Evals & Observability",
+      //   desc: "LangSmith, custom eval harnesses, prompt versioning. If you can't measure it, you can't ship it.",
+      // },
     ],
   },
   {
@@ -224,10 +228,10 @@ export const stackGroups = [
         name: "CI/CD",
         desc: "GitHub Actions, Vercel, EAS — automated tests, preview deploys, mobile OTA pipelines.",
       },
-      {
-        name: "Terraform / Pulumi",
-        desc: "Infrastructure as code for anything past MVP scale.",
-      },
+      // {
+      //   name: "Terraform / Pulumi",
+      //   desc: "Infrastructure as code for anything past MVP scale.",
+      // },
     ],
   },
 ];

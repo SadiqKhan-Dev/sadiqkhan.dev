@@ -24,17 +24,17 @@ export function About() {
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-8 space-y-6 text-muted-foreground text-lg leading-relaxed">
             <p className="stagger-item">
-              I started writing code at 15 because I wanted to build a Discord
+              I started writing code at 25 because I wanted to build a Discord
               bot. That bot is long dead, but the instinct it gave me — figure
               it out, ship it, iterate — has shaped everything since.
             </p>
-            <p className="stagger-item">
-              Over the last five years I&apos;ve gone from freelance WordPress
+            {/* <p className="stagger-item">
+              Over the last two years I&apos;ve gone from freelance WordPress
               sites to leading AI product engineering for venture-backed
               startups. The throughline hasn&apos;t changed: I build things
               that work. Not demos, not prototypes dressed up with a domain
               name — real systems handling real load, real users, real money.
-            </p>
+            </p> */}
             <p className="stagger-item">
               What I do best sits at an intersection most engineers avoid. I
               can architect a Next.js frontend, design the Postgres schema

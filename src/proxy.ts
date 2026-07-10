@@ -12,12 +12,6 @@ const ALLOWED_PATHS = new Set([
 function isStaticAsset(pathname: string): boolean {
   return (
     pathname.startsWith("/_next/") ||
-    pathname.startsWith("/file.") ||
-    pathname.startsWith("/globe.") ||
-    pathname.startsWith("/next.") ||
-    pathname.startsWith("/vercel.") ||
-    pathname.startsWith("/window.") ||
-    pathname.startsWith("/team/") ||
     pathname.endsWith(".ico") ||
     pathname.endsWith(".svg") ||
     pathname.endsWith(".png") ||
@@ -46,7 +40,7 @@ function isProduction(): boolean {
   );
 }
 
-export function middleware(request: NextRequest): NextResponse | undefined {
+export function proxy(request: NextRequest): NextResponse | undefined {
   if (!isMaintenanceModeEnabled() || !isProduction()) {
     return undefined;
   }

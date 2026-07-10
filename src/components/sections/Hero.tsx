@@ -69,7 +69,7 @@ export function Hero() {
             I build AI-native products
           </span>
           <br />
-          <span className="text-foreground">end-to-end —</span>
+          <span className="text-foreground">end-to-end </span>
           <br />
           <span className="text-muted-foreground">from </span>
           <span className="text-accent">model</span>
@@ -85,7 +85,7 @@ export function Hero() {
         </h1>
 
         <p className="hero-subtitle mt-10 max-w-2xl text-lg sm:text-xl text-muted-foreground leading-relaxed">
-          I&apos;m a full-stack engineer with 5+ years shipping production AI
+          I&apos;m a full-stack engineer with 2+ years shipping production AI
           products, mobile apps, and scalable web platforms. I specialize in
           LLM integration, RAG systems, and turning ambiguous ideas into
           shipped software.
@@ -119,7 +119,7 @@ export function Hero() {
 
         <div className="hero-stats mt-20 grid grid-cols-2 sm:grid-cols-4 gap-px bg-border/60 rounded-2xl overflow-hidden border border-border/60">
           {[
-            { k: "5+", v: "years shipping" },
+            { k: "01+", v: "years shipping" },
             { k: "40+", v: "products deployed" },
             { k: "2M+", v: "LLM calls / day" },
             { k: "< 24h", v: "response time" },
